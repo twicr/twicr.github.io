@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript 和 HTML DOM参考手册</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<script type="text/javascript" src="JS/main.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="head">
+		<div class="nav">
+			<div class="logo clearfix">
+				<a href="http://www.runoob.com/"><img src="images/logo.jpg"></a>
+			</div>
+			<div class="text">
+				<input type="text" placeholder="搜索..." class="text_input">
+			</div>
+		</div>
+	</div>
+	<!-- 导航栏 -->
+	<div id="head_label">
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="http://www.runoob.com/html/html-tutorial.html">HTML</a></li>
+				<li><a href="http://www.runoob.com/css/css-tutorial.html">CSS</a></li>
+				<li><a href="http://www.runoob.com/js/js-tutorial.html">JAVASCRIPT</a></li>
+				<li><a href="http://www.runoob.com/jquery/jquery-tutorial.html">JQUERY</a></li>
+				<li><a href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html">BOOTSTRAP</a></li>
+				<li><a href="http://www.runoob.com/sql/sql-tutorial.html">SQL</a></li>
+				<li><a href="http://www.runoob.com/mysql/mysql-tutorial.html">MYSQL</a></li>
+				<li><a href="http://www.runoob.com/php/php-tutorial.html">PHP</a></li>
+				<li><a href="http://www.runoob.com/python/python-tutorial.html">PYTHON2</a></li>
+				<li><a href="http://www.runoob.com/python3/python3-tutorial.html">PYTHON3</a></li>
+				<li><a href="http://www.runoob.com/cprogramming/c-tutorial.html">C</a></li>
+				<li><a href="http://www.runoob.com/cplusplus/cpp-tutorial.html">C++</a></li>
+				<li><a href="http://www.runoob.com/csharp/csharp-tutorial.html">C#</a></li>
+				<li><a href="http://www.runoob.com/java/java-tutorial.html">JAVA</a></li>
+				<li><a href="http://www.runoob.com/browser-history">本地书签</a></li>
+				<li><a href="http://www.runoob.com/w3cnote/knowledge-start.html" style="font-weight: bold;">我的圈子</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体 -->
+	<div class="container">
+		<div class="row">
+			<!-- 左侧导航栏 -->
+			<div class="left-column">
+				<div class="tab">JavaScript 参考手册</div>
+				<div class="sidebar">
+					<div class="design">
+						<a href="css_select.html"  style="background-color: rgb(150,185,125); font-weight: bold; color: rgb(255,255,255);">概览</a>
+						<h2 class="left">
+							<span class="left_h2">JavaScript</span> 对象
+						</h2>
+						<a href="#">JavaScript Array 对象</a>
+						<a href="#">JavaScript Boolean 对象</a>
+						<a href="#">JavaScript Date 对象</a>
+						<a href="#">JavaScript Math 对象</a>
+						<a href="#">JavaScript Number 对象</a>
+						<a href="#">JavaScript String 对象</a>
+						<a href="#">JavaScript RegExp 对象</a>
+						<a href="#">JavaScript 全局属性/函数</a>
+						<a href="#">JavaScript 运算符</a>
+						<a href="#">JavaScript Error</a>
+						<h2 class="left">
+							<span class="left_h2">Browser</span> 对象
+						</h2>
+						<a href="#">HTML DOM Document 对象</a>
+						<a href="#">HTML DOM 元素对象</a>
+						<a href="#">HTML DOM 属性对象</a>
+						<a href="#">HTML DOM 事件对象</a>
+						<a href="#">HTML DOM Console 对象</a>
+						<a href="#">CSSStyleDeclaration 对象</a>
+						<a href="#">DOM HTML Collection</a>
+						<h2 class="left">
+							<span class="left_h2">HTML</span> 对象
+						</h2>
+						<a href="#">&lt;a></a>
+						<a href="#">&lt;area></a>
+						<a href="#">&lt;audio></a>
+						<a href="#">&lt;base></a>
+						<a href="#">&lt;blockquote></a>
+						<a href="#">&lt;body></a>
+						<a href="#">&lt;button></a>
+						<a href="#">&lt;canvas></a>
+						<a href="#">&lt;col></a>
+						<a href="#">&lt;colgroup></a>
+						<a href="#">&lt;datalist></a>
+						<a href="#">&lt;del></a>
+						<a href="#">&lt;details></a>
+						<a href="#">&lt;dialog></a>
+						<a href="#">&lt;embed></a>
+						<a href="#">&lt;fieldset></a>
+						<a href="#">&lt;form></a>
+						<a href="#">&lt;iframe></a>
+						<a href="#">&lt;img></a>
+						<a href="#">&lt;ins></a>
+						<a href="#">&lt;input>-button</a>
+						<a href="#">&lt;input>-checkbox</a>
+						<a href="#">&lt;input>-color</a>
+						<a href="#">&lt;input>-date</a>
+						<a href="#">&lt;input>-datetime</a>
+						<a href="#">&lt;input>-datetime-local</a>
+						<a href="#">&lt;input>-email</a>
+						<a href="#">&lt;input>-file</a>
+						<a href="#">&lt;input>-hidden</a>
+						<a href="#">&lt;input>-image</a>
+						<a href="#">&lt;input>-month</a>
+						<a href="#">&lt;input>-number</a>
+						<a href="#">&lt;input>-range</a>
+						<a href="#">&lt;input>-password</a>
+						<a href="#">&lt;input>-radio</a>
+						<a href="#">&lt;input>-reset</a>
+						<a href="#">&lt;input>-search</a>
+						<a href="#">&lt;input>-text</a>
+						<a href="#">&lt;input>-time</a>
+						<a href="#">&lt;input>-url</a>
+						<a href="#">&lt;input>-week</a>
+						<a href="#">&lt;keygen></a>
+						<a href="#">&lt;label></a>
+						<a href="#">&lt;legend></a>
+						<a href="#">&lt;li></a>
+						<a href="#">&lt;link></a>
+						<a href="#">&lt;map></a>
+						<a href="#">&lt;menu></a>
+						<a href="#">&lt;menultem></a>
+						<a href="#">&lt;meta></a>
+						<a href="#">&lt;meter></a>
+						<a href="#">&lt;object></a>
+						<a href="#">&lt;ol></a>
+						<a href="#">&lt;optgroup></a>
+						<a href="#">&lt;option></a>
+						<a href="#">&lt;param></a>
+						<a href="#">&lt;progress></a>
+						<a href="#">&lt;q></a>
+						<a href="#">&lt;script></a>
+						<a href="#">&lt;select></a>
+						<a href="#">&lt;source></a>
+						<a href="#">&lt;style></a>
+						<a href="#">&lt;table></a>
+						<a href="#">&lt;td></a>
+						<a href="#">&lt;th></a>
+						<a href="#">&lt;tr></a>
+						<a href="#">&lt;textarea></a>
+						<a href="#">&lt;title></a>
+						<a href="#">&lt;time></a>
+						<a href="#">&lt;track></a>
+						<a href="#">&lt;video></a>
+					</div>
+				</div>
+			</div>
+			<!-- 中间主体部分 -->
+			<div class="middle-column">
+				<div class="article">
+					<div class="next-link">
+						<div class="nextLink">
+							<a href="#">JavaScript Array 对象</a>
+							<a href="#"><img src="images/jiantouright.png" height="14px"></a>
+						</div>
+					</div>
+					<div class="article-body">
+						<div class="article-intro">
+							<h1>
+								JavaScript 和 HTML DOM
+								<span>参考手册</span>
+							</h1>
+							<p>所有内置的JavaScript对象</p>
+							<p>所有浏览器对象</p>
+							<p style="margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #ccc;">所有HTML DOM对象</p>
+							<h1>
+								JavaScript 对象参考手册
+							</h1>
+							<p>参考手册描述了每个对象的属性和方法，并提供了在线实例。</p>
+							<ul>
+								<li><a href="#">Array 对象</a></li>
+								<li><a href="#">Boolean 对象</a></li>
+								<li><a href="#">Date 对象</a></li>
+								<li><a href="#">Math 对象</a></li>
+								<li><a href="#">Number 对象</a></li>
+								<li><a href="#">String 对象</a></li>
+								<li><a href="#">RegExp 对象</a></li>
+								<li><a href="#">全局属性和函数</a></li>
+							</ul>
+							<h1 style="margin-top: 10px;">
+								Browser 对象参考手册
+							</h1>
+							<p>参考手册描述了每个对象的属性和方法，并提供了在线实例。</p>
+							<ul>
+								<li><a href="#">HTML Document</a></li>
+								<li><a href="#">HTML Element</a></li>
+								<li><a href="#">HTML Attributes</a></li>
+								<li><a href="#">HTML Events</a></li>
+							</ul>
+							<h1 style="margin-top: 10px;">
+								HTML DOM 元素对象参考手册
+							</h1>
+							<p>参考手册描述了每个对象的属性和方法，并提供了在线实例。</p>
+							<ul>
+								<li><a href="#">Anchor 对象</a></li>
+								<li><a href="#">Area 对象</a></li>
+								<li><a href="#">Base 对象</a></li>
+								<li><a href="#">Body 对象</a></li>
+								<li><a href="#">Button 对象</a></li>
+								<li><a href="#">Form 对象</a></li>
+								<li><a href="#">Frame/IFrame 对象</a></li>
+								<li><a href="#">Frameset 对象</a></li>
+								<li><a href="#">Image 对象</a></li>
+								<li><a href="#">Input Button 对象</a></li>
+								<li><a href="#">Input Checkbox 对象</a></li>
+								<li><a href="#">Input File 对象</a></li>
+								<li><a href="#">Input Hidden 对象</a></li>
+								<li><a href="#">Input Password 对象</a></li>
+								<li><a href="#">Input Radio 对象</a></li>
+								<li><a href="#">Input Reset 对象</a></li>
+								<li><a href="#">Input Submit 对象</a></li>
+								<li><a href="#">Input Text 对象</a></li>
+								<li><a href="#">Link 对象</a></li>
+								<li><a href="#">Meta 对象</a></li>
+								<li><a href="#">Object 对象</a></li>
+								<li><a href="#">Option 对象</a></li>
+								<li><a href="#">Select 对象</a></li>
+								<li><a href="#">Style 对象</a></li>
+								<li><a href="#">Table 对象</a></li>
+								<li><a href="#">td / th 对象</a></li>
+								<li><a href="#">tr 对象</a></li>
+								<li><a href="#">Textarea 对象</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="next-link">
+						<div class="nextLink">
+							<a href="#">JavaScript Array 对象</a>
+							<a href="#"><img src="images/jiantouright.png" height="14px"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 右侧导航栏 -->
+			<div class="right-column">
+				<!-- 导航部分 -->
+				<div class="sidebar-box">
+						<a href="#"><img src="images/liebiao.png" height="16" style="float: left; margin-top: 2px;">分类导航</a>
+				</div>
+				<div class="sidebar-tree">
+					<ul id="one">
+						<li>
+							<a href="#">HTML/CSS</a>
+							<ul>
+								<li><a href="#">HTML 教程</a></li>
+								<li><a href="#">HTML5 教程</a></li>
+								<li><a href="#">CSS 教程</a></li>
+								<li><a href="#">CSS3 教程</a></li>
+								<li><a href="#">Bootstrap3 教程</a></li>
+								<li><a href="#">Bootstrap4 教程</a></li>
+								<li><a href="#">Font Awesome教程</a></li>
+								<li><a href="#">Foundation 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">JavaScript</a>
+							<ul>
+								<li><a href="#">JavaScript 教程</a></li>
+								<li><a href="#">HTML DOM 教程</a></li>
+								<li><a href="#">jQuery 教程</a></li>
+								<li><a href="#">Angular JS 教程</a></li>
+								<li><a href="#">AugularJS2 教程</a></li>
+								<li><a href="#">Vue.js 教程</a></li>
+								<li><a href="#">React 教程</a></li>
+								<li><a href="#">TypeScript 教程</a></li>
+								<li><a href="#">jQuery UI 教程</a></li>
+								<li><a href="#">jQuery EasyUI 教程</a></li>
+								<li><a href="#">Node.js 教程</a></li>
+								<li><a href="#">AJAX 教程</a></li>
+								<li><a href="#">JSON 教程</a></li>
+								<li><a href="#">Highcharts 教程</a></li>
+								<li><a href="#">Google 地图 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">服务端</a>
+							<ul>
+								<li><a href="#">PHP 教程</a></li>
+								<li><a href="#">Python 教程</a></li>
+								<li><a href="#">Python3 教程</a></li>
+								<li><a href="#">Django 教程</a></li>
+								<li><a href="#">Linux 教程</a></li>
+								<li><a href="#">Docker 教程</a></li>
+								<li><a href="#">Ruby 教程</a></li>
+								<li><a href="#">Java 教程</a></li>
+								<li><a href="#">C 教程</a></li>
+								<li><a href="#">C++ 教程</a></li>
+								<li><a href="#">Perl 教程</a></li>
+								<li><a href="#">Servlet 教程</a></li>
+								<li><a href="#">JSP 教程</a></li>
+								<li><a href="#">Lua 教程</a></li>
+								<li><a href="#">Scala 教程</a></li>
+								<li><a href="#">Go 教程</a></li>
+								<li><a href="#">设计模式</a></li>
+								<li><a href="#">正则表达式</a></li>
+								<li><a href="#">Maven 教程</a></li>
+								<li><a href="#">NumPy 教程</a></li>
+								<li><a href="#">ASP 教程</a></li>
+								<li><a href="#">AppML 教程</a></li>
+								<li><a href="#">VBScript 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">数据库</a>
+							<ul>
+								<li><a href="#">SQL 教程</a></li>
+								<li><a href="#">Mysql 教程</a></li>
+								<li><a href="#">SQLite 教程</a></li>
+								<li><a href="#">MongoDB 教程</a></li>
+								<li><a href="#">Redis 教程</a></li>
+								<li><a href="#">Memcached 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">移动端</a>
+							<ul>
+								<li><a href="#">Android 教程</a></li>
+								<li><a href="#">Swift 教程</a></li>
+								<li><a href="#">jQuery Mobile 教程</a></li>
+								<li><a href="#">ionic 教程</a></li>
+								<li><a href="#">Kotlin 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">XML 教程</a>
+							<ul>
+								<li><a href="#">XML 教程</a></li>
+								<li><a href="#">DTD 教程</a></li>
+								<li><a href="#">XML DOM 教程</a></li>
+								<li><a href="#">XSLT 教程</a></li>
+								<li><a href="#">XPath 教程</a></li>
+								<li><a href="#">XQuery 教程</a></li>
+								<li><a href="#">XLink 教程</a></li>
+								<li><a href="#">XPointer 教程</a></li>
+								<li><a href="#">XML Schema 教程</a></li>
+								<li><a href="#">XSL-FO 教程</a></li>
+								<li><a href="#">SVG 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">ASP.NET</a>
+							<ul>
+								<li><a href="#">ASP.NET 教程</a></li>
+								<li><a href="#">C# 教程</a></li>
+								<li><a href="#">Web Pages 教程</a></li>
+								<li><a href="#">Razor 教程</a></li>
+								<li><a href="#">MVC 教程</a></li>
+								<li><a href="#">Web Forms 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Web Service</a>
+							<ul>
+								<li><a href="#">Web Service 教程</a></li>
+								<li><a href="#">WSDL 教程</a></li>
+								<li><a href="#">SOAP 教程</a></li>
+								<li><a href="#">RSS 教程</a></li>
+								<li><a href="#">RDF 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">开发工具</a>
+							<ul>
+								<li><a href="#">Eclipse 教程</a></li>
+								<li><a href="#">Git 教程</a></li>
+								<li><a href="#">Svn 教程</a></li>
+								<li><a href="#">Markdown 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">网站建设</a>
+							<ul>
+								<li><a href="#">HTTP 教程</a></li>
+								<li><a href="#">网站建设指南</a></li>
+								<li><a href="#">浏览器信息</a></li>
+								<li><a href="#">网站主机教程</a></li>
+								<li><a href="#">TCP/IP 教程</a></li>
+								<li><a href="#">W3C 教程</a></li>
+								<li><a href="#">网站品质</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<div class="footer">
+		<div class="runoob-block">
+			<div class="runoob">
+				<div class="fexample">
+					<h6>在线实例</h6>
+					<ul>
+						<li><a href="javascript:void(0)">· HTML 实例</a></li>
+						<li><a href="javascript:void(0)">· CSS 实例</a></li>
+						<li><a href="javascript:void(0)">· JavaScript 实例</a></li>
+						<li><a href="javascript:void(0)">· Ajax实例</a></li>
+						<li><a href="javascript:void(0)">· jQuery 实例</a></li>
+						<li><a href="javascript:void(0)">· XML 实例</a></li>
+						<li><a href="javascript:void(0)">· Java 实例</a></li>
+					</ul>
+				</div>
+				<div class="fchar">
+					<h6>字符集&工具</h6>
+					<ul>
+						<li><a href="JavaScript:void(0)">· HTML 字符集设置</a></li>
+						<li><a href="JavaScript:void(0)">· HTML ASCII 字符集</a></li>
+						<li><a href="JavaScript:void(0)">· HTML ISO-8859-1</a></li>
+						<li><a href="JavaScript:void(0)">· HTML 实体符号</a></li>
+						<li><a href="JavaScript:void(0)">· HTML 拾色器</a></li>
+						<li><a href="JavaScript:void(0)">· JSON 格式化工具</a></li>
+					</ul>
+				</div>
+				<div class="fupdate">
+					<h6>最新更新</h6>
+					<ul>
+						<li><a href="JavaScript:void(0)">· Python3 subprocess</a></li>
+						<li><a href="JavaScript:void(0)">· Java 测验</a></li>
+						<li><a href="JavaScript:void(0)">· Docker load 命令</a></li>
+						<li><a href="JavaScript:void(0)">· localstorage 必...</a></li>
+						<li><a href="JavaScript:void(0)">· Python3 divmod()</a></li>
+						<li><a href="JavaScript:void(0)">· jQuery Cookie 插件</a></li>
+						<li><a href="JavaScript:void(0)">· CSS 网页布局</a></li>
+					</ul>
+				</div>
+				<div class="fabout">
+					<h6>站点信息</h6>
+					<ul>
+						<li><a href="JavaScript:void(0)">· 意见反馈</a></li>
+						<li><a href="JavaScript:void(0)">· 合作联系</a></li>
+						<li><a href="JavaScript:void(0)">· 免责声明</a></li>
+						<li><a href="JavaScript:void(0)">· 关于我们</a></li>
+						<li><a href="JavaScript:void(0)">· 文章归档</a></li>
+						<li><a href="JavaScript:void(0)"></a></li>
+					</ul>
+				</div>
+				<div class="fwechat">
+					<h4 style="font-size: 16px; color: #666">关注微信</h4>
+				</div>
+			</div>
+		</div>
+		<div class="footer-text">
+			<div class="ftext">
+				Copyright © 2013-2019 <b>菜鸟教程  runoob.com</b> All Rights Reserved. 备案号：闽ICP备15012807号-1 
+			</div>
+		</div>
+	</div>
+	<!-- 右侧悬浮置顶 -->
+	<div class="fix-btn">
+		<a href="javascript:ScrollTop(0, 200);" class="top" id="top-btn" title="返回顶部"></a>
+		<a href="javascript:void(0)" class="qrcode" title="关注我们" onmouseover="change('atten', 'block')" onmouseout="change('atten', 'none')">
+		
+		</a>
+		<a href="javascript:void(0)" class="shoucang" title="标记/收藏"></a>
+	
+	</div>
+	<div id="atten">
+		<div class="trigon">
+			<span></span>
+		</div>	
+		<div class="code">
+			微信关注
+		</div>
+	</div>
+</body>
+</html>

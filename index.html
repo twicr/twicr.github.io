@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端资料整合</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/demo_styles.css">
+    <link rel="stylesheet" href="css/demo1.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+</head>
+
+<body class="dm-demo1">
+    <div class="jq22-container">
+        <div class="head-top">
+            <div class="top-left fl">
+                <img src="images/twicr.jpg" height="30">
+                <span>Twicr</span>
+                <span style="margin-left: 15px;">Email : twicr@foxmail.com</span>
+            </div>
+            <span id="clock" class="fr"></span>
+        </div>
+        <figure class="balloon">
+            <header class="jq22-header">
+                <h1 class="helloWorld">Hello World!<br>HTML + CSS + JavaScript</h1>
+            </header>
+            <!-- 4个盒子按钮 -->
+            <nav class="nav clearfix">
+                <button class="nav-el" id="el-topleft" data-id="ov-topleft" onclick="on('ov-topleft')" onmouseover="bgOpacity('ov-topleft', 'feature')">HTML</button>
+                <button class="nav-el" id="el-topright" data-id="ov-topright" onclick="on('ov-topright')" onmouseover="bgOpacity('ov-topright', 'feature02')">CSS</span></button>
+                <button class="nav-el" id="el-btmleft" data-id="ov-btmleft" style="font-size: 30px;" onclick="on('ov-btmleft')" onmouseover="bgOpacity('ov-btmleft', 'feature03')">JavaScript</span></button>
+                <button class="nav-el" id="el-btmright" data-id="ov-btmright" style="font-size: 30px;" onclick="on('ov-btmright')" onmouseover="bgOpacity('ov-btmright', 'feature04')">学习资料</button>
+            </nav>
+        </figure>
+        <!-- 盒子内容 -->
+        <section class="overlay" id="ov-topleft">
+            <div class="feature" id="box-1"></div>
+            <div class="content">
+                <h2>超文本标记语言<br>（英语：HyperText Markup Language，简称：HTML）</h2>
+                <p>一种用于创建网页的标准标记语言。HTML是一种基础技术，常与CSS、JavaScript一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面[3]。网页浏览器可以读取HTML文件，并将其渲染成可视化网页。HTML描述了一个网站的结构语义随着线索的呈现，使之成为一种标记语言而非编程语言。</p>
+                <p>HTML元素是构建网站的基石。HTML允许嵌入图像与对象，并且可以用于创建交互式表单，它被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。HTML的语言形式为尖括号包围的HTML元素（如&lt;html>），浏览器使用HTML标签和脚本来诠释网页内容，但不会将它们显示在页面上。</p>
+                <p>HTML可以嵌入如JavaScript的脚本语言，它们会影响HTML网页的行为。网页浏览器也可以引用层叠样式表（CSS）来定义文本和其它元素的外观与布局。维护HTML和CSS标准的组织万维网联盟（W3C）鼓励人们使用CSS替代一些用于表现的HTML元素。</p>
+                <h2>参考手册</h2>
+                <p class="pa" style="margin-bottom: 50px;"><a href="runoob/runoob_html.html" target="_blank">runoob/runoob_html.html</a></p>
+            </div>
+            <button id="boxoff-1" class="close" onmouseover="change('ov-topleft', 'boxoff-1', '0')"><span class="mfg-cancel"></span></button>
+        </section>
+        <section class="overlay" id="ov-topright">
+            <div class="feature02" id="box-2"></div>
+            <div class="content">
+                <h2>CSS 层叠样式表</h2>
+                <p>层叠样式表（英语：Cascading Style Sheets，简写CSS），又称串样式列表、级联样式表、串接样式表、阶层式样式表，一种用来为结构化文档（如HTML文档或XML应用）添加样式（字体、间距和颜色等）的计算机语言，由W3C定义和维护。当前最新版本是CSS2.1，为W3C的推荐标准。CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。</p>
+                <p>CSS不能单独使用，必须与HTML或XML一起协同工作，为HTML或XML起装饰作用。本文主要介绍用于装饰HTML网页的CSS技术。其中HTML负责确定网页中有哪些内容，CSS确定以何种外观(大小、粗细、颜色、对齐和位置)展现这些元素。CSS可以用于设定页面布局、设定页面元素样式、设定适用于所有网页的全局样式。CSS可以零散地直接添加在要应用样式的网页元素上，也可以集中化内置于网页、链接式引入网页以及导入式引入网页。</p>
+                <p>CSS最重要的目标是将文件的内容与它的显示分隔开来。在CSS出现前，几乎所有的HTML文件内都包含文件显示的信息，比如字体的颜色、背景应该是怎样的、如何排列、边缘、连线等等都必须一一在HTML文件内列出，有时重复列出。CSS使作者可以将这些信息中的大部分隔离出来，简化HTML文件，这些信息被放在一个辅助的，用CSS语言写的文件中。HTML文件中只包含结构和内容的信息，CSS文件中只包含样式的信息。</p>
+                <p>比如HTML中H2标志这一个二级标题，它在级别上比一级标题H1低，比三级标题H3高。这些信息都是结构上的信息。</p>
+                <p>CSS样式信息可以包含在一个附件中或包含在HTML文件内。读者可以使用多个样式表，在重复的情况下他可以选择其中之一。不同的媒体可以使用不同的样式表。比如一个文件在荧光屏上的显示可以与在打印机中打印出来的显示不同。这样作者可以为不同的媒体设计最佳的显示方式。此外CSS的目标之一是让读者有更大的控制显示的自由。假如一个读者觉得斜体字的标题读起来很困难，他可以使用自己的样式表文件，这个样式表可以“层叠”使用，他可以只改变红色斜体字这个样式而保留所有其他的样式。</p>
+                <h2>参考手册</h2>
+                <p class="pa" style="margin-bottom: 50px;"><a href="runoob/runoob_css.html" target="_blank">runoob/runoob_css.html</a></p>
+            </div>
+            <button id="boxoff-2" class="close" onmouseover="change('ov-topright', 'boxoff-2', '0')"><span class="mfg-cancel"></span></button>
+        </section>
+        <section class="overlay" id="ov-btmleft">
+            <div class="feature03" id="box-3"></div>
+            <div class="content">
+                <h2>JavaScript</h2>
+                <p>JavaScript，通常缩写为JS，是一种高级的，解释型语言的编程语言。JavaScript是一门基于原型、函数先行的语言，是一门多范式的语言，它支持面向对象编程，命令式编程，以及函数式编程。它提供语法来操控文本、数组、日期以及正则表达式等，不支持I/O，比如网络、存储和图形等，但这些都可以由它的宿主环境提供支持。它已经由ECMA（欧洲计算机制造商协会）通过ECMAScript实现语言的标准化。它被世界上的绝大多数网站所使用，也被世界主流浏览器（Chrome、IE、Firefox、Safari、Opera）支持。</p>
+                <p>虽然JavaScript与Java这门语言不管是在名字上，或是在语法上都有很多相似性，但这两门编程语言从设计之初就有很大的不同，JavaScript的语言设计主要受到了Self（一种基于原型的编程语言）和Scheme（一门函数式编程语言）的影响[6]。在语法结构上它又与C语言有很多相似（例如if条件语句、while循环、switch语句、do-while循环等）。</p>
+                <p>在客户端，JavaScript在传统意义上被实现为一种解释语言，但在最近，它已经可以被即时编译（JIT）执行。随着最新的HTML5和CSS3语言标准的推行它还可用于游戏、桌面和移动应用程序的开发和在服务器端网络环境运行，如Node.js。</p>
+                <h2>参考手册</h2>
+                <p class="pa" style="margin-bottom: 50px;"><a href="runoob/runoob_js.html" target="_blank">runoob/runoob_js.html</a></p>
+            </div>
+            <button id="boxoff-3" class="close" onmouseover="change('ov-btmleft', 'boxoff-3', '0')"><span class="mfg-cancel"></span></button>
+        </section>
+        <section class="overlay" id="ov-btmright">
+            <div class="feature04" id="box-4"></div>
+            <div class="content">
+                <h2>在GitHub上收集的最全的前端资源汇总（包括前端学习、前端开发资源、前端求职面试等）</h2>
+                <p class="pa"><a href="https://github.com/helloqingfeng/Awsome-Front-End-learning-resource" target="_blank">https://github.com/helloqingfeng/Awsome-Front-End-learning-resource</a></p>
+                <h3>结合个人经历总结的前端入门方法</h3>
+                <p class="pa">作者：qiu&nbsp;<a href="https://github.com/qiu-deqing" target="_blank">https://github.com/qiu-deqing</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/qiu-deqing/FE-learning" target="_blank">https://github.com/qiu-deqing/FE-learning</a></p>
+                <h3>前端学习路径</h3>
+                <p class="pa">作者： 余博伦&nbsp;<a href="https://github.com/discountry" target="_blank">https://github.com/discountry</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://zhuanlan.zhihu.com/p/21935921" target="_blank">https://zhuanlan.zhihu.com/p/21935921</a></p>
+                <h3>JavaScript 全栈工程师培训教程</h3>
+                <p class="pa">作者： 阮一峰&nbsp;<a href="https://github.com/ruanyf" target="_blank">https://github.com/ruanyf</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/ruanyf/jstraining" target="_blank">https://github.com/ruanyf/jstraining</a></p>
+                <h3>前端开发者手册(学习前端的实践手册)</h3>
+                <p class="pa">作者：Pomy&nbsp;<a href="https://github.com/dwqs" target="_blank">https://github.com/dwqs</a></p>
+                <p class="pa">中文源地址：&nbsp;<a href="https://github.com/dwqs/fedHandlebook" target="_blank">https://github.com/dwqs/fedHandlebook</a></p>
+                <p class="pa">阅读地址：&nbsp;<a href="https://dwqs.gitbooks.io/frontenddevhandbook/content/" target="_blank">https://dwqs.gitbooks.io/frontenddevhandbook/content/</a></p>
+                <p class="pa">英文原版地址：&nbsp;<a href="https://www.frontendhandbook.com/" target="_blank">https://www.frontendhandbook.com/</a></p>
+                <h3>前端开发笔记本</h3>
+                <p class="pa">作者：Li Xinyang&nbsp;<a href="https://github.com/li-xinyang" target="_blank">https://github.com/li-xinyang</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/li-xinyang/FEND_Note" target="_blank">https://github.com/li-xinyang/FEND_Note</a></p>
+                <p class="pa">阅读地址：&nbsp;<a href="http://li-xinyang.gitbooks.io/frontend-notebook/" target="_blank">http://li-xinyang.gitbooks.io/frontend-notebook/</a></p>
+                <h3>最全的资源教程——前端涉及的所有知识体系</h3>
+                <p class="pa">作者：JadeYang&nbsp;<a href="https://github.com/nicejade" target="_blank">https://github.com/nicejade</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/nicejade/Front-end-tutorial" target="_blank">https://github.com/nicejade/Front-end-tutorial</a></p>
+                <h3>大前端工具集——程序猿的百宝箱</h3>
+                <p class="pa">作者：聂微东&nbsp;<a href="https://github.com/nieweidong" target="_blank">https://github.com/nieweidong</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/nieweidong/fetool" target="_blank">https://github.com/nieweidong/fetool</a></p>
+                <p class="pa">阅读地址：&nbsp;<a href="http://www.fefork.com/fetool" target="_blank">http://www.fefork.com/fetool</a></p>
+                <h3>100+ 超全的web开发工具和资源</h3>
+                <p class="pa">译者：稀土区&nbsp;<a href="https://xituqu.com/" target="_blank">https://xituqu.com/</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://xituqu.com/170.html" target="_blank">https://xituqu.com/170.html</a></p>
+                <h3>JavaScript 资源大全中文版</h3>
+                <p class="pa">作者：伯乐在线&nbsp;<a href="https://github.com/jobbole" target="_blank">https://github.com/jobbole</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/jobbole/awesome-javascript-cn" target="_blank">https://github.com/jobbole/awesome-javascript-cn</a></p>
+                <h3>前端技能汇总</h3>
+                <p class="pa">作者：Jackson Tian&nbsp;<a href="https://github.com/JacksonTian" target="_blank">https://github.com/JacksonTian</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/JacksonTian/fks" target="_blank">https://github.com/JacksonTian/fks</a></p>
+                <p class="pa">阅读地址：&nbsp;<a href="http://html5ify.com/fks/" target="_blank">http://html5ify.com/fks/</a></p>
+                <h3>Web前端开发技术栈</h3>
+                <p class="pa">作者：Wilson Chen&nbsp;<a href="https://github.com/unruledboy" target="_blank">https://github.com/unruledboy</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/unruledboy/WebFrontEndStack" target="_blank">https://github.com/unruledboy/WebFrontEndStack</a></p>
+                <h3>前端开发所使用语言的主流学习资源汇集指南</h3>
+                <p class="pa">作者：icepy&nbsp;<a href="https://github.com/icepy" target="_blank">https://github.com/icepy</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/icepy/Front-End-Develop-Guide" target="_blank">https://github.com/icepy/Front-End-Develop-Guide</a></p>
+                <h3>GitHub上值得关注的前端项目</h3>
+                <p class="pa">作者：trigkit4&nbsp;<a href="https://github.com/hawx1993" target="_blank">https://github.com/hawx1993</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/hawx1993/github-FE-project" target="_blank">https://github.com/hawx1993/github-FE-project</a></p>
+                <h3>前端开发相关的优秀网站、博客、以及活跃开发者</h3>
+                <p class="pa">作者：Luo Lei&nbsp;<a href="https://github.com/foru17" target="_blank">https://github.com/foru17</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/foru17/front-end-collect" target="_blank">https://github.com/foru17/front-end-collect</a></p>
+                <h3>国内知名 IT 公司前端团队 (排名不分先后)</h3>
+                <p class="pa">作者：Mingdong Luo&nbsp;<a href="https://github.com/mdluo" target="_blank">https://github.com/mdluo</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/mdluo/awesome-fe-team" target="_blank">https://github.com/mdluo/awesome-fe-team</a></p>
+                <h3>关于程序员读书-大牛们的书单汇总</h3>
+                <p class="pa">作者：Mingdong Luo&nbsp;<a href="https://github.com/mdluo" target="_blank">https://github.com/mdluo</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://mdluo.github.io/blog/about-reading/" target="_blank">https://mdluo.github.io/blog/about-reading/</a></p>
+                <h3>Github个人收集的优秀JavaScript项目</h3>
+                <p class="pa">作者：Daiyichen&nbsp;<a href="https://github.com/Daiyichen" target="_blank">https://github.com/Daiyichen</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/Daiyichen/Front-end-tutorial/blob/master/project.md" target="_blank">https://github.com/Daiyichen/Front-end-tutorial/blob/master/project.md</a></p>
+                <h3>免费的计算机编程类中文书籍</h3>
+                <p class="pa">作者：迷渡&nbsp;<a href="https://github.com/justjavac" target="_blank">https://github.com/justjavac</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/justjavac/free-programming-books-zh_CN" target="_blank">https://github.com/justjavac/free-programming-books-zh_CN</a></p>
+                <p class="pa">阅读地址：&nbsp;<a href="http://siberiawolf.com/free_programming/index.html" target="_blank">http://siberiawolf.com/free_programming/index.html</a></p>
+                <h3>前端开发书签</h3>
+                <p class="pa">作者：张正雄&nbsp;<a href="https://github.com/zzxadi" target="_blank">https://github.com/zzxadi</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/zzxadi/frontend-dev-bookmarks" target="_blank">https://github.com/zzxadi/frontend-dev-bookmarks</a></p>
+                <h3>收集有趣的、富有交互的前端教程</h3>
+                <p class="pa">作者：JiangShui Yu&nbsp;<a href="https://github.com/yujiangshui" target="_blank">https://github.com/yujiangshui</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/yujiangshui/fun-front-end-tutorials" target="_blank">https://github.com/yujiangshui/fun-front-end-tutorials</a></p>
+                <h3>前端代码审查清单</h3>
+                <p class="pa">作者：JiangShui Yu&nbsp;<a href="https://github.com/yujiangshui" target="_blank">https://github.com/yujiangshui</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/yujiangshui/front-end-code-checklist" target="_blank">https://github.com/yujiangshui/front-end-code-checklist</a></p>
+                <h3>移动前端资源整理</h3>
+                <p class="pa">作者：Ionic China&nbsp;<a href="https://github.com/IonicChina" target="_blank">https://github.com/IonicChina</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/IonicChina/Mobile-front-end-tutorial" target="_blank">https://github.com/IonicChina/Mobile-front-end-tutorial</a></p>
+                <h3>前端开发规范手册</h3>
+                <p class="pa">作者：阿树&nbsp;<a href="https://github.com/Aaaaaashu" target="_blank">https://github.com/Aaaaaashu</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/Aaaaaashu/Guide" target="_blank">https://github.com/Aaaaaashu/Guide</a></p>
+                <p class="pa">阅读地址：&nbsp;<a href="http://zhibimo.com/read/Ashu/front-end-style-guide/" target="_blank">http://zhibimo.com/read/Ashu/front-end-style-guide/</a></p>
+                <h3>Web前端开发规范文档</h3>
+                <p class="pa">作者：kc&nbsp;<a href="https://github.com/kangcafe" target="_blank">https://github.com/kangcafe</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/kangcafe/web_develop_standard" target="_blank">https://github.com/kangcafe/web_develop_standard</a></p>
+                <h3>适用于小团队的前端规范</h3>
+                <p class="pa">作者：hzlzh&nbsp;<a href="https://github.com/hzlzh" target="_blank">https://github.com/hzlzh</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/hzlzh/Front-End-Standards" target="_blank">https://github.com/hzlzh/Front-End-Standards</a></p>
+                <p class="pa">阅读地址：&nbsp;<a href="http://front-end-standards.com/" target="_blank">http://front-end-standards.com/</a></p>
+                <h2>前端求职面试</h2>
+                <h3>关于程序员求职简历汇总（包含一些优秀简历示例）</h3>
+                <p class="pa">作者：Mingdong Luo&nbsp;<a href="https://github.com/mdluo" target="_blank">https://github.com/mdluo</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://mdluo.github.io/blog/about-resume/" target="_blank">https://mdluo.github.io/blog/about-resume/</a></p>
+                <h3>关于前端面试文章汇总</h3>
+                <p class="pa">作者：Mingdong Luo&nbsp;<a href="https://github.com/mdluo" target="_blank">https://github.com/mdluo</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://mdluo.github.io/blog/about-front-end-interview/" target="_blank">https://mdluo.github.io/blog/about-front-end-interview/</a></p>
+                <h3>前端面试问题集锦</h3>
+                <p class="pa">作者：trigkit4&nbsp;<a href="https://github.com/hawx1993" target="_blank">https://github.com/hawx1993</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/hawx1993/Front-end-Interview-questions" target="_blank">https://github.com/hawx1993/Front-end-Interview-questions</a></p>
+                <h3>前端工作面试问题</h3>
+                <p class="pa">作者：H5BP&nbsp;<a href="https://github.com/h5bp" target="_blank">https://github.com/h5bp</a></p>
+                <p class="pa">中文版作者：Liu Chao&nbsp;<a href="https://github.com/lc-soft" target="_blank">https://github.com/lc-soft</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions" target="_blank">https://github.com/h5bp/Front-end-Developer-Interview-Questions</a></p>
+                <h3>收集的前端面试题和答案</h3>
+                <p class="pa">作者：qiu&nbsp;<a href="https://github.com/qiu-deqing" target="_blank">https://github.com/qiu-deqing</a></p>
+                <p class="pa">源地址：&nbsp;<a href="https://github.com/qiu-deqing/FE-interview" target="_blank">https://github.com/qiu-deqing/FE-interview</a></p>
+                <h3>一套完整的学习手册帮助自己准备 Google 的面试</h3>
+                <p class="pa">原文作者：&nbsp;<a href="https://github.com/jwasham/coding-interview-university" target="_blank">John Washam</a></p>
+                <p class="pa">译文出自：&nbsp;<a href="https://github.com/xitu/gold-miner" target="_blank">掘金翻译计划</a></p>
+                <p class="pa">译者：&nbsp;<a href="https://github.com/aleen42" target="_blank">Aleen</a><a href="https://github.com/Newt0n" target="_blank">Newton</a><a href="https://github.com/bobmayuze" target="_blank">bobmayuze</a><a href="https://github.com/laobie" target="_blank">Jaeger</a><a href="https://github.com/sqrthree" target="_blank">sqrthree</a></p>
+                <p class="pa" style="margin-bottom: 50px;">源地址：&nbsp;<a href="https://github.com/jwasham/google-interview-university" target="_blank">https://github.com/jwasham/google-interview-university</a></p>
+            </div>
+            <button id="boxoff-4" class="close" onmouseover="change('ov-btmright', 'boxoff-4', '0')"><span class="mfg-cancel"></span></button>
+        </section>
+        <div class="browser_msg">
+            <p>对不起，你的浏览器不支持CSS3特性！</a></p>
+        </div>
+    </div>
+    <div class="pic1">
+        <img src="images/code.png" height="200">
+    </div>
+    <!-- <div class="pic2">
+        <img src="images/weather.png" height="200">
+    </div> 
+    <div class="pic3">
+        <img src="images/notfound.png" height="200">
+    </div>  -->
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+
+</html>

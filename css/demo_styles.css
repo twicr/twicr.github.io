@@ -1,0 +1,261 @@
+/******************************
+EXAMPLE STYLES
+******************************/
+.noscroll {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.head-top{
+  width: 100%;
+  height: 40px;
+  padding: 0 50px;
+  background-color: #f5f5f5;
+}
+
+.head-top .top-left{
+  padding-top: 5px;
+}
+
+.head-top .top-left span{
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 10px;
+  vertical-align: 6px;
+  font-weight: bolder;
+  font-family: "华文新魏";
+  color: #777;
+}
+
+#clock{
+  font: bold 18px sans;
+  font-family: "华文新魏";
+  margin-top: 14px;
+}
+
+.jq22-header .helloWorld{
+  font-size: 55px;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: 50px;
+  font-family: "微软雅黑";
+}
+
+.balloon {
+  display: flex;
+  top: 50px;
+  flex-direction: column;
+  animation: drift 2s infinite alternate;
+}
+
+@keyframes drift {
+  to {
+    transform: translateY(-1%);
+  }
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 9999;
+  visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  display: block;
+  width: 80%;
+  max-width: 740px;
+  margin: 120px auto 0;
+}
+
+.close {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  font-size: 36px;
+}
+
+/* Main Nav */
+.nav {
+  width: 80%;
+  height: 100%;
+  max-width: 420px;
+  margin: 50px auto 1300px;
+  font-size: 33px;
+}
+
+.nav-el {
+  height: 200px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 47.5%;
+  padding-bottom: 47.5%;
+  color: white;
+  z-index: 10;
+  line-height: 200px;
+  /* Placements */
+}
+
+.nav-el.active_reverse {
+  z-index: 11;
+  background: transparent;
+}
+.nav-el.inactive {
+  pointer-events: none;
+  cursor: default;
+}
+.nav-el:nth-of-type(2n+1) {
+  float: left;
+}
+.nav-el:nth-of-type(n+3) {
+  margin-top: 5%;
+}
+
+/* A fix for Safari and .nav-el z-index:
+	when animation starts, the square appear bellow other .nav-el
+  	even if it has a bigger z-index */
+.demo3_cont {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Space adjustment  */
+@media only screen and (min-width: 520px) {
+  .nav {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .overlay .wrap {
+    margin: 150px auto 0;
+  }
+}
+
+.pic1{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 270px;
+  height: 200px;
+}
+
+/******************************
+COLORS
+******************************/
+/* demo1 */
+body.dm-demo1 {
+  background: #1abc9c;
+}
+body.dm-demo1 .button {
+  color: #1abc9c;
+  background: #16a085;
+}
+body.dm-demo1 .button:hover {
+  background-color: #107360;
+}
+body.dm-demo1 .overlay {
+  background-color: #232323;
+}
+body.dm-demo1 .nav-el {
+  background-color: #16a085;
+  transition: background-color .3s ease-in;
+  -moz-transition: background-color .3s ease-in;
+  -webkit-transition: background-color .3s ease-in;
+}
+body.dm-demo1 .nav-el:hover, body.dm-demo1 .nav-el.active {
+  background: #107360;
+}
+body.dm-demo1 .nav-el.active {
+  z-index: 11;
+}
+body.dm-demo1 .backtoarticle {
+  border-color: #16a085;
+  color: #16a085;
+}
+body.dm-demo1 .backtoarticle:hover {
+  color: #107360;
+  border-color: #107360;
+}
+
+.opaque {
+  position:absolute; top:0; 
+  left:0; right:0; bottom:0; 
+  opacity:0; 
+  background:#d2d6f1;
+}
+
+.lt-ie9 .opaque {display:none;}
+
+.feature {
+  position:fixed; 
+  top:0; 
+  z-index:0; 
+  width:100%; 
+  height: 100%;
+  background: url(../images/html.jpg) center center no-repeat;
+  -webkit-background-size:110%;
+  -moz-background-size:110%;
+  -o-background-size:110%;
+  background-size:110%;
+}
+
+.feature02 {
+  position:fixed; 
+  top:0; 
+  z-index:0; 
+  width:100%; 
+  height: 100%; 
+  background: url(../images/css.png) center center no-repeat;
+  -webkit-background-size:110%;
+  -moz-background-size:110%;
+  -o-background-size:110%;
+  background-size:110%;
+}
+
+.feature03 {
+  position:fixed; 
+  top:0; 
+  z-index:0; 
+  width:100%; 
+  height: 100%; 
+  background: url(../images/javascript.png) center center no-repeat;
+  -webkit-background-size:110%;
+  -moz-background-size:110%;
+  -o-background-size:110%;
+  background-size:110%;
+}
+
+.feature04 {
+  position:fixed; 
+  top:0; 
+  z-index:0; 
+  width:100%; 
+  height: 100%; 
+  background: url(../images/github.jpeg) center center no-repeat;
+  -webkit-background-size:110%;
+  -moz-background-size:110%;
+  -o-background-size:110%;
+  background-size:110%;
+}
+
+.content {
+  position:relative; 
+  z-index:1; 
+  padding-top:45%; 
+  width:90%; 
+  margin:0 auto;
+}
+
+@media only screen and (min-width:36.250em) {
+  .content {width:60%; padding-top:35% }
+}

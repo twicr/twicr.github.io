@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS参考手册</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<script type="text/javascript" src="JS/main.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="head">
+		<div class="nav">
+			<div class="logo clearfix">
+				<a href="http://www.runoob.com/"><img src="images/logo.jpg"></a>
+			</div>
+			<div class="text">
+				<input type="text" placeholder="搜索..." class="text_input">
+			</div>
+		</div>
+	</div>
+	<!-- 导航栏 -->
+	<div id="head_label">
+		<div class="nav">
+			<ul>
+				<li><a href="runoob_css.html">首页</a></li>
+				<li><a href="http://www.runoob.com/html/html-tutorial.html">HTML</a></li>
+				<li><a href="http://www.runoob.com/css/css-tutorial.html">CSS</a></li>
+				<li><a href="http://www.runoob.com/js/js-tutorial.html">JAVASCRIPT</a></li>
+				<li><a href="http://www.runoob.com/jquery/jquery-tutorial.html">JQUERY</a></li>
+				<li><a href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html">BOOTSTRAP</a></li>
+				<li><a href="http://www.runoob.com/sql/sql-tutorial.html">SQL</a></li>
+				<li><a href="http://www.runoob.com/mysql/mysql-tutorial.html">MYSQL</a></li>
+				<li><a href="http://www.runoob.com/php/php-tutorial.html">PHP</a></li>
+				<li><a href="http://www.runoob.com/python/python-tutorial.html">PYTHON2</a></li>
+				<li><a href="http://www.runoob.com/python3/python3-tutorial.html">PYTHON3</a></li>
+				<li><a href="http://www.runoob.com/cprogramming/c-tutorial.html">C</a></li>
+				<li><a href="http://www.runoob.com/cplusplus/cpp-tutorial.html">C++</a></li>
+				<li><a href="http://www.runoob.com/csharp/csharp-tutorial.html">C#</a></li>
+				<li><a href="http://www.runoob.com/java/java-tutorial.html">JAVA</a></li>
+				<li><a href="http://www.runoob.com/browser-history">本地书签</a></li>
+				<li><a href="http://www.runoob.com/w3cnote/knowledge-start.html" style="font-weight: bold;">我的圈子</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主体 -->
+	<div class="container">
+		<div class="row">
+			<!-- 左侧导航栏 -->
+			<div class="left-column">
+				<div class="tab">CSS 参考手册</div>
+				<div class="sidebar">
+					<div class="design">
+						<a href="runoob_css.html">CSS 参考手册</a>
+						<a href="css_select.html"  style="background-color: rgb(150,185,125); font-weight: bold; color: rgb(255,255,255);">CSS 选择器</a>
+						<a href="#">CSS 听觉参考手册</a>
+						<a href="#">CSS Web安全字体</a>
+						<a href="#">CSS 动画</a>
+						<a href="#">CSS 函数</a>
+						<a href="#">CSS 单位</a>
+						<a href="#">CSS 颜色</a>
+						<a href="#">CSS 合法颜色值</a>
+						<a href="#">CSS 颜色名称</a>
+						<a href="#">CSS 颜色十六进制值</a>
+						<a href="#">CSS 浏览器支持</a>
+						<h2 class="left">
+							<span class="left_h2">CSS</span> 属性
+						</h2>
+						<a href="#">align-content</a>
+						<a href="#">align-items</a>
+						<a href="#">align-self</a>
+						<a href="#">all</a>
+						<a href="#">animation</a>
+						<a href="#">animation-delay</a>
+						<a href="#">animation-direction</a>
+						<a href="#">animation-duration</a>
+						<a href="#">animation-fill-mode</a>
+						<a href="#">animation-iteration-count</a>
+						<a href="#">animation-name</a>
+						<a href="#">animation-play-state</a>
+						<a href="#">animation-timing-function</a>
+						<a href="#">appearance</a>
+						<a href="#">backface-visibility</a>
+						<a href="#">background</a>
+						<a href="#">background-attachment</a>
+						<a href="#">background-blend-mode</a>
+						<a href="#">background-clip</a>
+						<a href="#">background-color</a>
+						<a href="#">background-image</a>
+						<a href="#">background-origin</a>
+						<a href="#">background-position</a>
+						<a href="#">background-repeat</a>
+						<a href="#">background-size</a>
+						<a href="#">border</a>
+						<a href="#">border-bottom</a>
+						<a href="#">border-bottom-color</a>
+						<a href="#">border-bottom-left-radius</a>
+						<a href="#">border-bottom-right-radius</a>
+						<a href="#">border-bottom-style</a>
+						<a href="#">border-bottom-width</a>
+						<a href="#">border-collapse</a>
+						<a href="#">border-color</a>
+						<a href="#">border-image</a>
+						<a href="#">border-image-outset</a>
+						<a href="#">border-image-repeat</a>
+						<a href="#">border-image-slice</a>
+						<a href="#">border-image-source</a>
+						<a href="#">border-image-width</a>
+						<a href="#">border-left</a>
+						<a href="#">border-left-color</a>
+						<a href="#">border-left-style</a>
+						<a href="#">border-left-width</a>
+						<a href="#">border-radius</a>
+						<a href="#">border-right</a>
+						<a href="#">border-right-color</a>
+						<a href="#">border-right-style</a>
+						<a href="#">border-right-width</a>
+						<a href="#">border-spacing</a>
+						<a href="#">border-style</a>
+						<a href="#">border-top</a>
+						<a href="#">border-top-color</a>
+						<a href="#">border-top-left-radius</a>
+						<a href="#">border-top-right-radius</a>
+						<a href="#">border-top-style</a>
+						<a href="#">border-top-width</a>
+						<a href="#">border-width</a>
+						<a href="#">bottom</a>
+						<a href="#">box-align</a>
+						<a href="#">box-direction</a>
+						<a href="#">box-flex</a>
+						<a href="#">box-flex-group</a>
+						<a href="#">box-lines</a>
+						<a href="#">box-ordinal-group</a>
+						<a href="#">box-orient</a>
+						<a href="#">box-pack</a>
+						<a href="#">box-shadow</a>
+						<a href="#">box-sizing</a>
+						<a href="#">caption-side</a>
+						<a href="#">clear</a>
+						<a href="#">clip</a>
+						<a href="#">color</a>
+						<a href="#">column-count</a>
+						<a href="#">column-fill</a>
+						<a href="#">column-gap</a>
+						<a href="#">column-rule</a>
+						<a href="#">column-rule-color</a>
+						<a href="#">column-rule-style</a>
+						<a href="#">column-rule-width</a>
+						<a href="#">column-span</a>
+						<a href="#">column-width</a>
+						<a href="#">columns</a>
+						<a href="#">content</a>
+						<a href="#">counter-increment</a>
+						<a href="#">counter-reset</a>
+						<a href="#">cursor</a>
+						<a href="#">direction</a>
+						<a href="#">display</a>
+						<a href="#">empty-cells</a>
+						<a href="#">filter</a>
+						<a href="#">flex</a>
+						<a href="#">flex-basis</a>
+						<a href="#">flex-direction</a>
+						<a href="#">flex-flow</a>
+						<a href="#">flex-grow</a>
+						<a href="#">flex-shrink</a>
+						<a href="#">flex-wrap</a>
+						<a href="#">float</a>
+						<a href="#">font</a>
+						<a href="#">@font-face</a>
+						<a href="#">font-family</a>
+						<a href="#">font-size</a>
+						<a href="#">font-size-adjust</a>
+						<a href="#">font-stretch</a>
+						<a href="#">font-style</a>
+						<a href="#">font-variant</a>
+						<a href="#">font-weight</a>
+						<a href="#">grid-columns</a>
+						<a href="#">grid-rows</a>
+						<a href="#">hanging-punctuation</a>
+						<a href="#">height</a>
+						<a href="#">icon</a>
+						<a href="#">justify-content</a>
+						<a href="#">@keyframes</a>
+						<a href="#">left</a>
+						<a href="#">letter-spacing</a>
+						<a href="#">line-height</a>
+						<a href="#">list-style</a>
+						<a href="#">list-style-image</a>
+						<a href="#">list-style-position</a>
+						<a href="#">list-style-type</a>
+						<a href="#">margin</a>
+						<a href="#">margin-bottom</a>
+						<a href="#">margin-left</a>
+						<a href="#">margin-right</a>
+						<a href="#">margin-top</a>
+						<a href="#">max-height</a>
+						<a href="#">max-width</a>
+						<a href="#">@media</a>
+						<a href="#">min-height</a>
+						<a href="#">min-width</a>
+						<a href="#">nav-down</a>
+						<a href="#">nav-index</a>
+						<a href="#">nav-left</a>
+						<a href="#">nav-right</a>
+						<a href="#">nav-up</a>
+						<a href="#">opacity</a>
+						<a href="#">order</a>
+						<a href="#">outline</a>
+						<a href="#">outline-color</a>
+						<a href="#">outline-offset</a>
+						<a href="#">outline-style</a>
+						<a href="#">outline-width</a>
+						<a href="#">overflow</a>
+						<a href="#">overflow-x</a>
+						<a href="#">overflow-y</a>
+						<a href="#">padding</a>
+						<a href="#">padding-bottom</a>
+						<a href="#">padding-left</a>
+						<a href="#">padding-right</a>
+						<a href="#">padding-top</a>
+						<a href="#">page-break-after</a>
+						<a href="#">page-break-before</a>
+						<a href="#">page-break-inside</a>
+						<a href="#">perspective</a>
+						<a href="#">perspective-origin</a>
+						<a href="#">position</a>
+						<a href="#">punctuation-trim</a>
+						<a href="#">quotes</a>
+						<a href="#">resize</a>
+						<a href="#">right</a>
+						<a href="#">rotation</a>
+						<a href="#">tab-size</a>
+						<a href="#">table-layout</a>
+						<a href="#">target</a>
+						<a href="#">target-name</a>
+						<a href="#">target-new</a>
+						<a href="#">target-position</a>
+						<a href="#">text-align</a>
+						<a href="#">text-align-last</a>
+						<a href="#">text-decoration</a>
+						<a href="#">text-decoration-color</a>
+						<a href="#">text-decoration-line</a>
+						<a href="#">text-decoration-style</a>
+						<a href="#">text-indent</a>
+						<a href="#">text-justify</a>
+						<a href="#">text-outline</a>
+						<a href="#">text-overflow</a>
+						<a href="#">text-shadow</a>
+						<a href="#">text-transform</a>
+						<a href="#">text-wrap</a>
+						<a href="#">top</a>
+						<a href="#">transform</a>
+						<a href="#">transform-origin</a>
+						<a href="#">transform-style</a>
+						<a href="#">transition</a>
+						<a href="#">transition-delay</a>
+						<a href="#">transition-duration</a>
+						<a href="#">transition-property</a>
+						<a href="#">transition-timing-function</a>
+						<a href="#">unicode-bidi</a>
+						<a href="#">vertical-align</a>
+						<a href="#">visibility</a>
+						<a href="#">white-space</a>
+						<a href="#">width</a>
+						<a href="#">word-break</a>
+						<a href="#">word-spacing</a>
+						<a href="#">word-wrap</a>
+						<a href="#">z-index</a>
+						<a href="#">writing-mode</a>
+					</div>
+				</div>
+			</div>
+			<!-- 中间主体部分 -->
+			<div class="middle-column">
+				<div class="article">
+					<div class="next-link">
+						<div class="lastLink">
+							<a href="runoob_css.html"><img src="images/jiantouleft.png" height="14px"></a>
+							<a href="runoob_css.html">CSS 参考手册</a>
+						</div>
+						<div class="nextLink">
+							<a href="#">CSS 听觉参考手册</a>
+							<a href="#"><img src="images/jiantouright.png" height="14px"></a>
+						</div>
+					</div>
+					<div class="article-body">
+						<div class="article-intro">
+							<h1>CSS
+								<span>选择器</span>
+							</h1>
+							<p>CSS选择器用于选择你想要的元素的样式的模式。</p>
+							<p style="margin-bottom: 5px;">"CSS"列表示在CSS版本的属性定义（CSS1，CSS2，或对CSS3）。</p>
+							<table class="reference">
+								<tr>
+									<th>选择器</th>
+									<th>示例</th>
+									<th>示例说明</th>
+									<th>CSS</th>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">.class</a>
+									</td>
+									<td>.intro</td>
+									<td>选择所有class="intro"的元素</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">#id</a>
+									</td>
+									<td>#firstname</td>
+									<td>选择所有id="firstname"的元素</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">*</a>
+									</td>
+									<td>*</td>
+									<td>选择所有元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">element</a>
+									</td>
+									<td>p</td>
+									<td>选择所有&lt;p>元素</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">element,element</a>
+									</td>
+									<td>div,p</td>
+									<td>选择所有&lt;div>元素和&lt;p>元素</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">element element</a>
+									</td>
+									<td>div p</td>
+									<td>选择&lt;div>元素内的所有&lt;p>元素</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">element>element</a>
+									</td>
+									<td>div>p</td>
+									<td>选择所有父级是&lt;div>元素的&lt;p>元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">element+element</a>
+									</td>
+									<td>div+p</td>
+									<td>选择所有紧接着&lt;div>元素之后的&lt;p>元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">[attribute]</a>
+									</td>
+									<td>[target]</td>
+									<td>选择所有带有target属性元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">[attribute=value]</a>
+									</td>
+									<td>[target=-blank]</td>
+									<td>选择所有使用target="-blank"的元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">[attribute~=value]</a>
+									</td>
+									<td>[title~=flower]</td>
+									<td>选择标题属性包含单词"flower"的所有元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">[attribute|=language]</a>
+									</td>
+									<td>[lang|=en]</td>
+									<td>选择 lang 属性以 en 为开头的所有元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:link</a>
+									</td>
+									<td>a:link</td>
+									<td>选择所有未访问链接</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:visited</a>
+									</td>
+									<td>a:visited</td>
+									<td>选择所有访问过的链接</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:active</a>
+									</td>
+									<td>a:active</td>
+									<td>选择活动链接</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:hover</a>
+									</td>
+									<td>a:hover</td>
+									<td>选择鼠标在链接上面时</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:focus</a>
+									</td>
+									<td>input:focus</td>
+									<td>选择具有焦点的输入元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:first-letter</a>
+									</td>
+									<td>p:first-letter</td>
+									<td>选择每一个&lt;P>元素的第一个字母</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:first-line</a>
+									</td>
+									<td>p:first-line</td>
+									<td>选择每一个&lt;P>元素的第一行</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:first-child</a>
+									</td>
+									<td>p:first-child</td>
+									<td>指定只有当&lt;p>元素是其父级的第一个子级的样式。</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:before</a>
+									</td>
+									<td>p:before</td>
+									<td>在每个&lt;p>元素之前插入内容</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:after</a>
+									</td>
+									<td>p:after</td>
+									<td>在每个&lt;p>元素之后插入内容</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:lang(language)</a>
+									</td>
+									<td>p:lang(it)</td>
+									<td>选择一个lang属性的起始值="it"的所有&lt;p>元素</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">element1~element2</a>
+									</td>
+									<td>p~ul</td>
+									<td>选择p元素之后的每一个ul元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">[attribute^=value]</a>
+									</td>
+									<td>a[src^="https"]</td>
+									<td>选择每一个src属性的值以"https"开头的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">[attribute$=value]</a>
+									</td>
+									<td>a[src$=".pdf"]</td>
+									<td>选择每一个src属性的值以".pdf"结尾的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">[attribute*=value]</a>
+									</td>
+									<td>a[src*="runoob"]</td>
+									<td>选择每一个src属性的值包含子字符串"runoob"的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:first-of-type</a>
+									</td>
+									<td>p:first-of-type</td>
+									<td>选择每个p元素是其父级的第一个p元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:last-of-type</a>
+									</td>
+									<td>p:last-of-type</td>
+									<td>选择每个p元素是其父级的最后一个p元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:only-of-type</a>
+									</td>
+									<td>p:only-of-type</td>
+									<td>选择每个p元素是其父级的唯一p元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:only-child</a>
+									</td>
+									<td>p:only-child</td>
+									<td>选择每个p元素是其父级的唯一子元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:nth-child(n)</a>
+									</td>
+									<td>p:nth-child(2)</td>
+									<td>选择每个p元素是其父级的第二个子元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:nth-last-child(n)</a>
+									</td>
+									<td>p:nth-last-child(2)</td>
+									<td>选择每个p元素的是其父级的第二个子元素，从最后一个子项计数</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:nth-of-type(n)</a>
+									</td>
+									<td>p:nth-of-type(2)</td>
+									<td>选择每个p元素是其父级的第二个p元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:nth-last-of-type(n)</a>
+									</td>
+									<td>p:nth-last-of-type(2)</td>
+									<td>选择每个p元素的是其父级的第二个p元素，从最后一个子项计数</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:last-child</a>
+									</td>
+									<td>p:last-child</td>
+									<td>选择每个p元素是其父级的最后一个子级。</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:root</a>
+									</td>
+									<td>:root</td>
+									<td>选择文档的根元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:empty</a>
+									</td>
+									<td>p:empty</td>
+									<td>选择每个没有任何子级的p元素（包括文本节点）</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:target</a>
+									</td>
+									<td>#news:target</td>
+									<td>选择当前活动的#news元素（包含该锚名称的点击的URL）</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:enabled</a>
+									</td>
+									<td>input:enabled</td>
+									<td>选择每一个已启用的输入元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:disabled</a>
+									</td>
+									<td>input:disabled</td>
+									<td>选择每一个禁用的输入元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:checked</a>
+									</td>
+									<td>input:checked</td>
+									<td>选择每个选中的输入元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:not(selector)</a>
+									</td>
+									<td>:not(p)</td>
+									<td>选择每个并非p元素的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">::selection</a>
+									</td>
+									<td>::selection</td>
+									<td>匹配元素中被用户选中或处于高亮状态的部分</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:out-of-range</a>
+									</td>
+									<td>:out-of-range</td>
+									<td>匹配值在指定区间之外的input元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:in-range</a>
+									</td>
+									<td>:in-range</td>
+									<td>匹配值在指定区间之内的input元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:read-write</a>
+									</td>
+									<td>:read-write</td>
+									<td>用于匹配可读及可写的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:read-only</a>
+									</td>
+									<td>:read-only</td>
+									<td>用于匹配设置 "readonly"（只读） 属性的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:optional</a>
+									</td>
+									<td>:optional</td>
+									<td>用于匹配可选的输入元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:required</a>
+									</td>
+									<td>:required</td>
+									<td>用于匹配设置了 "required" 属性的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:valid</a>
+									</td>
+									<td>:valid</td>
+									<td>用于匹配输入值为合法的元素</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">:invalid</a>
+									</td>
+									<td>:invalid</td>
+									<td>用于匹配输入值为非法的元素</td>
+									<td>3</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="next-link">
+						<div class="lastLink">
+							<a href="runoob_css.html"><img src="images/jiantouleft.png" height="14px"></a>
+							<a href="runoob_css.html">CSS 参考手册</a>
+						</div>
+						<div class="nextLink">
+							<a href="#">CSS 听觉参考手册</a>
+							<a href="#"><img src="images/jiantouright.png" height="14px"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 右侧导航栏 -->
+			<div class="right-column">
+				<!-- 导航部分 -->
+				<div class="sidebar-box">
+						<a href="#"><img src="images/liebiao.png" height="16" style="float: left; margin-top: 2px;">分类导航</a>
+				</div>
+				<div class="sidebar-tree">
+					<ul id="one">
+						<li>
+							<a href="#">HTML/CSS</a>
+							<ul>
+								<li><a href="#">HTML 教程</a></li>
+								<li><a href="#">HTML5 教程</a></li>
+								<li><a href="#">CSS 教程</a></li>
+								<li><a href="#">CSS3 教程</a></li>
+								<li><a href="#">Bootstrap3 教程</a></li>
+								<li><a href="#">Bootstrap4 教程</a></li>
+								<li><a href="#">Font Awesome教程</a></li>
+								<li><a href="#">Foundation 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">JavaScript</a>
+							<ul>
+								<li><a href="#">JavaScript 教程</a></li>
+								<li><a href="#">HTML DOM 教程</a></li>
+								<li><a href="#">jQuery 教程</a></li>
+								<li><a href="#">Angular JS 教程</a></li>
+								<li><a href="#">AugularJS2 教程</a></li>
+								<li><a href="#">Vue.js 教程</a></li>
+								<li><a href="#">React 教程</a></li>
+								<li><a href="#">TypeScript 教程</a></li>
+								<li><a href="#">jQuery UI 教程</a></li>
+								<li><a href="#">jQuery EasyUI 教程</a></li>
+								<li><a href="#">Node.js 教程</a></li>
+								<li><a href="#">AJAX 教程</a></li>
+								<li><a href="#">JSON 教程</a></li>
+								<li><a href="#">Highcharts 教程</a></li>
+								<li><a href="#">Google 地图 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">服务端</a>
+							<ul>
+								<li><a href="#">PHP 教程</a></li>
+								<li><a href="#">Python 教程</a></li>
+								<li><a href="#">Python3 教程</a></li>
+								<li><a href="#">Django 教程</a></li>
+								<li><a href="#">Linux 教程</a></li>
+								<li><a href="#">Docker 教程</a></li>
+								<li><a href="#">Ruby 教程</a></li>
+								<li><a href="#">Java 教程</a></li>
+								<li><a href="#">C 教程</a></li>
+								<li><a href="#">C++ 教程</a></li>
+								<li><a href="#">Perl 教程</a></li>
+								<li><a href="#">Servlet 教程</a></li>
+								<li><a href="#">JSP 教程</a></li>
+								<li><a href="#">Lua 教程</a></li>
+								<li><a href="#">Scala 教程</a></li>
+								<li><a href="#">Go 教程</a></li>
+								<li><a href="#">设计模式</a></li>
+								<li><a href="#">正则表达式</a></li>
+								<li><a href="#">Maven 教程</a></li>
+								<li><a href="#">NumPy 教程</a></li>
+								<li><a href="#">ASP 教程</a></li>
+								<li><a href="#">AppML 教程</a></li>
+								<li><a href="#">VBScript 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">数据库</a>
+							<ul>
+								<li><a href="#">SQL 教程</a></li>
+								<li><a href="#">Mysql 教程</a></li>
+								<li><a href="#">SQLite 教程</a></li>
+								<li><a href="#">MongoDB 教程</a></li>
+								<li><a href="#">Redis 教程</a></li>
+								<li><a href="#">Memcached 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">移动端</a>
+							<ul>
+								<li><a href="#">Android 教程</a></li>
+								<li><a href="#">Swift 教程</a></li>
+								<li><a href="#">jQuery Mobile 教程</a></li>
+								<li><a href="#">ionic 教程</a></li>
+								<li><a href="#">Kotlin 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">XML 教程</a>
+							<ul>
+								<li><a href="#">XML 教程</a></li>
+								<li><a href="#">DTD 教程</a></li>
+								<li><a href="#">XML DOM 教程</a></li>
+								<li><a href="#">XSLT 教程</a></li>
+								<li><a href="#">XPath 教程</a></li>
+								<li><a href="#">XQuery 教程</a></li>
+								<li><a href="#">XLink 教程</a></li>
+								<li><a href="#">XPointer 教程</a></li>
+								<li><a href="#">XML Schema 教程</a></li>
+								<li><a href="#">XSL-FO 教程</a></li>
+								<li><a href="#">SVG 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">ASP.NET</a>
+							<ul>
+								<li><a href="#">ASP.NET 教程</a></li>
+								<li><a href="#">C# 教程</a></li>
+								<li><a href="#">Web Pages 教程</a></li>
+								<li><a href="#">Razor 教程</a></li>
+								<li><a href="#">MVC 教程</a></li>
+								<li><a href="#">Web Forms 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Web Service</a>
+							<ul>
+								<li><a href="#">Web Service 教程</a></li>
+								<li><a href="#">WSDL 教程</a></li>
+								<li><a href="#">SOAP 教程</a></li>
+								<li><a href="#">RSS 教程</a></li>
+								<li><a href="#">RDF 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">开发工具</a>
+							<ul>
+								<li><a href="#">Eclipse 教程</a></li>
+								<li><a href="#">Git 教程</a></li>
+								<li><a href="#">Svn 教程</a></li>
+								<li><a href="#">Markdown 教程</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">网站建设</a>
+							<ul>
+								<li><a href="#">HTTP 教程</a></li>
+								<li><a href="#">网站建设指南</a></li>
+								<li><a href="#">浏览器信息</a></li>
+								<li><a href="#">网站主机教程</a></li>
+								<li><a href="#">TCP/IP 教程</a></li>
+								<li><a href="#">W3C 教程</a></li>
+								<li><a href="#">网站品质</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<div class="footer">
+		<div class="runoob-block">
+			<div class="runoob">
+				<div class="fexample">
+					<h6>在线实例</h6>
+					<ul>
+						<li><a href="javascript:void(0)">· HTML 实例</a></li>
+						<li><a href="javascript:void(0)">· CSS 实例</a></li>
+						<li><a href="javascript:void(0)">· JavaScript 实例</a></li>
+						<li><a href="javascript:void(0)">· Ajax实例</a></li>
+						<li><a href="javascript:void(0)">· jQuery 实例</a></li>
+						<li><a href="javascript:void(0)">· XML 实例</a></li>
+						<li><a href="javascript:void(0)">· Java 实例</a></li>
+					</ul>
+				</div>
+				<div class="fchar">
+					<h6>字符集&工具</h6>
+					<ul>
+						<li><a href="JavaScript:void(0)">· HTML 字符集设置</a></li>
+						<li><a href="JavaScript:void(0)">· HTML ASCII 字符集</a></li>
+						<li><a href="JavaScript:void(0)">· HTML ISO-8859-1</a></li>
+						<li><a href="JavaScript:void(0)">· HTML 实体符号</a></li>
+						<li><a href="JavaScript:void(0)">· HTML 拾色器</a></li>
+						<li><a href="JavaScript:void(0)">· JSON 格式化工具</a></li>
+					</ul>
+				</div>
+				<div class="fupdate">
+					<h6>最新更新</h6>
+					<ul>
+						<li><a href="JavaScript:void(0)">· Python3 subprocess</a></li>
+						<li><a href="JavaScript:void(0)">· Java 测验</a></li>
+						<li><a href="JavaScript:void(0)">· Docker load 命令</a></li>
+						<li><a href="JavaScript:void(0)">· localstorage 必...</a></li>
+						<li><a href="JavaScript:void(0)">· Python3 divmod()</a></li>
+						<li><a href="JavaScript:void(0)">· jQuery Cookie 插件</a></li>
+						<li><a href="JavaScript:void(0)">· CSS 网页布局</a></li>
+					</ul>
+				</div>
+				<div class="fabout">
+					<h6>站点信息</h6>
+					<ul>
+						<li><a href="JavaScript:void(0)">· 意见反馈</a></li>
+						<li><a href="JavaScript:void(0)">· 合作联系</a></li>
+						<li><a href="JavaScript:void(0)">· 免责声明</a></li>
+						<li><a href="JavaScript:void(0)">· 关于我们</a></li>
+						<li><a href="JavaScript:void(0)">· 文章归档</a></li>
+						<li><a href="JavaScript:void(0)"></a></li>
+					</ul>
+				</div>
+				<div class="fwechat">
+					<h4 style="font-size: 16px; color: #666">关注微信</h4>
+				</div>
+			</div>
+		</div>
+		<div class="footer-text">
+			<div class="ftext">
+				Copyright © 2013-2019 <b>菜鸟教程  runoob.com</b> All Rights Reserved. 备案号：闽ICP备15012807号-1 
+			</div>
+		</div>
+	</div>
+	<!-- 右侧悬浮置顶 -->
+	<div class="fix-btn">
+		<a href="javascript:ScrollTop(0, 200);" class="top" id="top-btn" title="返回顶部"></a>
+		<a href="javascript:void(0)" class="qrcode" title="关注我们" onmouseover="change('atten', 'block')" onmouseout="change('atten', 'none')">
+		
+		</a>
+		<a href="javascript:void(0)" class="shoucang" title="标记/收藏"></a>
+	
+	</div>
+	<div id="atten">
+		<div class="trigon">
+			<span></span>
+		</div>	
+		<div class="code">
+			微信关注
+		</div>
+	</div>
+</body>
+</html>
