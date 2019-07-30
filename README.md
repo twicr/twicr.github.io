@@ -1,2 +1,2 @@
-# twicr.github.io
-前端资料收集demo
+# 前端资料收集demo
+#### 本项目为前端资料的小demo，项目未做浏览器兼容，请使用最新版Chrome打开
